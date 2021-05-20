@@ -8,18 +8,27 @@ import pickle
 import streamlit as st
 
 
-# In[8]:
+# In[13]:
 
 
 # pwd
+import transformers
+import sentencepiece
+from summarizer import Summarizer
+
+
+# In[14]:
+
+
+bert_model=Summarizer()
 
 
 # In[9]:
 
 
 # loading in the model to predict on the data
-pickle_in = open('bert_model.pkl', 'rb')
-bert_model = pickle.load(pickle_in)
+# pickle_in = open('bert_model.pkl', 'rb')
+# bert_model = pickle.load(pickle_in)
 
 
 # In[10]:
