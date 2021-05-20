@@ -1,0 +1,7 @@
+sumy
+numpy==1.18.5
+streamlit
+transformers
+sentencepiece
+bert-extractive-summarizer
+keybert
