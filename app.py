@@ -1,29 +1,35 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[7]:
 
 
 import pickle
 import streamlit as st
 
 
-# In[2]:
+# In[8]:
+
+
+# pwd
+
+
+# In[9]:
 
 
 # loading in the model to predict on the data
-pickle_in = open('saved_models/bert_model.pkl', 'rb')
+pickle_in = open('bert_model.pkl', 'rb')
 bert_model = pickle.load(pickle_in)
 
 
-# In[3]:
+# In[10]:
 
 
 def welcome():
     return 'welcome all'
 
 
-# In[4]:
+# In[11]:
 
 
 def SummarizeText(inp):  
@@ -33,7 +39,7 @@ def SummarizeText(inp):
     return summary_generated
 
 
-# In[5]:
+# In[12]:
 
 
 def main():
@@ -44,7 +50,7 @@ def main():
     # the font and background color, the padding and the text to be displayed
     html_temp = """
     <div style ="background-color:tomato;padding:13px">
-    <h1 style ="color:black;text-align:center;">Auto Summarization and key word extraction App </h1>
+    <h1 style ="color:black;text-align:center;">Summarize </h1>
     </div>
     """
       
